@@ -16,7 +16,7 @@ public class Student {
     //exista 2 tipuri de metode: void si return
 
 
-    public String nume ;
+    public String nume;
 
     // in momentul cand definim o variabila, nu este obligatoriu sa-i dam o valoare
 
@@ -36,16 +36,16 @@ public class Student {
 
     @Test
 
-    public void prezentareStudent (){
+    public void prezentareStudent() {
 
-        nume="Ghica";
-        prenume="Alina";
-        varsta=40;
-        adresa="Strada Stejarului nr. 24, Iasi";
-        inaltime=1.67;
-        greutate=60.00f;
-        sex='F';
-        areDiploma=true;
+        nume = "Ghica";
+        prenume = "Alina";
+        varsta = 40;
+        adresa = "Strada Stejarului nr. 24, Iasi";
+        inaltime = 1.67;
+        greutate = 60.00f;
+        sex = 'F';
+        areDiploma = true;
 
         System.out.println("Numele studentului este: " + nume);
         System.out.printf("Prenumele studentului este: " + prenume);
@@ -57,17 +57,29 @@ public class Student {
         System.out.println("Are studentul diploma? " + areDiploma);
 
         calculMedie();
+        System.out.println(getSalariu());
 
 
     }
 
-    public void calculMedie(){
+    public void calculMedie() {
 
-        Integer nota1=8;
-        Integer nota2=5;
-        Integer nota3=7;
-        Integer media=(nota1 + nota2 + nota3)/3;
+        Integer nota1 = 8;
+        Integer nota2 = 5;
+        Integer nota3 = 7;
+        Integer media = (nota1 + nota2 + nota3) / 3;
 
         System.out.println("Media studentului este: " + media);
     }
+
+    //metoda cu return
+
+    public Integer getSalariu() {
+
+        Integer salariu = 10000;
+        return salariu;
+
+    }
+
+
 }
