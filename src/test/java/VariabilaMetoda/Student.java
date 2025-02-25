@@ -2,6 +2,8 @@ package VariabilaMetoda;
 
 import org.testng.annotations.Test;
 
+import java.util.Scanner;
+
 public class Student {
 
     //class = sablon care defineste proprietatile si comportamentul unei entitati specifice
@@ -80,6 +82,8 @@ public class Student {
         return salariu;
 
     }
+
+
 
 
 }
